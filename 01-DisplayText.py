@@ -1,5 +1,6 @@
 """
 01. 문자열을 다뤄봅시다.
+Youtube link: https://youtu.be/emY34tSKXc4
 """
 
 """
