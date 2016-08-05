@@ -1,6 +1,7 @@
 """
 01. 문자열을 다뤄봅시다.
 Youtube link: https://youtu.be/emY34tSKXc4
+점프 투 파이썬 (02-2 문자열 자료형) https://wikidocs.net/13
 """
 
 """
@@ -18,7 +19,6 @@ print('Hi world')
 
 # 문자열 작성
 # ' 작은 따옴표 ('), 큰 따옴표 (")를 이용하여 문자열을 표현 할 수 있습니다.
-# 자세한 내용은 문자열 자료형 설명을 참고하세요. (https://wikidocs.net/13)
 
 print('문자열 표현 - 작은 따옴표')
 print("문자열 표현 - 큰 따옴표")
