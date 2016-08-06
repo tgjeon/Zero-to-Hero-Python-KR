@@ -1,6 +1,6 @@
-# Zero-to-Hero-Python (with Korean comments)
+# Zero-to-Hero-Python-KR (with Korean comments)
 
-[Microsoft Virtual Academy (MVA) Python을 이용한 프로그래밍 소개](https://mva.microsoft.com/ko/training-courses/python%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%86%8C%EA%B0%9C-8360) 
+MVA 강의: [Microsoft Virtual Academy (MVA) Python을 이용한 프로그래밍 소개](https://mva.microsoft.com/ko/training-courses/python%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%86%8C%EA%B0%9C-8360) 
 
 Python 3.4를 기준으로 합니다.
 
@@ -18,5 +18,5 @@ Python 3.4를 기준으로 합니다.
 12. 함수
 13. 오류 처리
  
-각 파일들은 축약된 [YouTube 비디오](https://www.youtube.com/watch?v=emY34tSKXc4)를 기준으로 작성되었습니다.
+각 파일들은 축약 편집된 [YouTube 비디오](https://www.youtube.com/watch?v=emY34tSKXc4)를 기준으로 작성되었습니다.
 
