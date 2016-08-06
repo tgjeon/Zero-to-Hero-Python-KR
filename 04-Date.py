@@ -1,3 +1,5 @@
+# -*- coding: utf8 -*-
+
 """
 04. 날짜를 사용해봅시다. (분)
 
@@ -8,5 +10,11 @@
 """
 
 
+"""
+날짜 및 시간을 다뤄봅시다.
+"""
 
+# datetime 클래스를 이용합니다.
+import datetime
 
+print(datetime.date.today())
