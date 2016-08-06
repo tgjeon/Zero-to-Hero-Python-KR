@@ -17,4 +17,34 @@
 # datetime 클래스를 이용합니다.
 import datetime
 
-print(datetime.date.today())
+today = datetime.date.today()
+print(today)
+
+"""
+자주 사용되는 날짜들
+
+%b: 월 (약어)
+%B: 월
+%y: 2자리 연도
+%a: 요일 (약어)
+%A: 요일
+
+자세한 내용: strftime.org
+"""
+print(today)
+print(today.month)
+print(today.year)
+
+print(today.strftime('%d %b, %Y'))
+
+
+
+"""
+사용자로부터 입력을 받아서 포맷을 바꿔봅시다.
+"""
+
+birthday = input("생일이 언제입니까? ")
+birthdate = datetime.datetime.strptime(birthday, "%m/%d/%Y")
+
+print("당신의 생일은 " + birthdate.strftime('%B'))
+
