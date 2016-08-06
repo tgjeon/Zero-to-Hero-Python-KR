@@ -46,5 +46,7 @@ print(today.strftime('%d %b, %Y'))
 birthday = input("생일이 언제입니까? ")
 birthdate = datetime.datetime.strptime(birthday, "%m/%d/%Y")
 
-print("당신의 생일은 " + birthdate.strftime('%B'))
+print(birthdate)
+
+
 
