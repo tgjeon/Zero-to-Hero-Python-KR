@@ -1,7 +1,7 @@
 # -*- coding: utf8 -*-
 
 """
-06. 코드로 복잡한 결정 내리기. (소요시간: 15분 강의)
+06. 코드로 복잡한 결정 내리기. (소요시간: 41분 강의)
 
 - Original version (MVA): https://mva.microsoft.com/ko/training-courses/python%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%86%8C%EA%B0%9C-8360
 - Compact version (Youtube): https://youtu.be/emY34tSKXc4?t=1h48m
@@ -106,11 +106,11 @@ if country == "CANADA" and \
 
 # 처음부터 작성된 순서대로 판단됩니다. 원치 않는 상황에서도 작동할 수 있습니다.
 # 위 코드는 "CANADA"라는 국가와 "MOOSE" 혹은 "BEAVER"라는 상황에 대해서 작동하도록 의도되었습니다.
+# 하지만 실제로는 and 가 먼저 동작하여 아래와 같이 동작됩니다.
 
-if country == "CANADA" and pet == "MOOSE" \
+if (country == "CANADA" and pet == "MOOSE") \
     or pet == "BEAVER":
     print("Do you play hockey too?")
-
 
 
 
@@ -122,3 +122,34 @@ if sport == 'HOCKEY' and (team == 'SENATORS' or team == 'LEAFS'):
     print("Good luck getting to the cup this year")
 
 # 위와 같이 괄호로 묶어주면, team 부분을 먼저 비교하고, 그 이후 sport 부분을 비교하게 됩니다.
+
+# 명시적으로 모든것을 변수로 정의하고 판단의 흐름을 명확히 기술 하는 방법도 있습니다.
+# 위의 if sport == 'HOCKEY' and (team == 'SENATORS' or team == 'LEAFS'): 과 같은 역할을 하는 코드는 아래와 같습니다
+sportIsHockey = False
+if sport == 'HOCKEY':
+    sportIsHockey = True
+
+teamIsCorrect = False
+if team == 'SENATORS' or team == 'LEAFS':
+    teamIsCorrect = True
+
+if sportIsHockey and teamIsCorrect:
+    print("Good luck getting to the cup this year")
+
+
+"""
+중첩된 if문을 사용해봅시다
+
+이 경우엔 코드의 들여쓰기 (indent)를 꼭 유심히 보고 작성하셔야 됩니다.
+들여쓰기에 따라 if문이 적용되는 것이 결정됩니다.
+"""
+
+monday = True
+freshCoffee = False
+
+if monday:
+    if not freshCoffee:
+        print("Go buy a coffee!")
+    print("I hate Mondays")
+print("now you can start work")
+
