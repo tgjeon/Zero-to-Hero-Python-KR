@@ -8,3 +8,32 @@
 - 참고:
 - 아래 설명은 Compact version 영상을 기준으로 작성되었습니다.
 """
+
+"""
+반복적인 일을 해봅시다.
+"""
+
+import turtle
+for step in range(4):
+    turtle.forward(100)
+    turtle.right(90)
+
+# step: 반복된 상태에 대한 변수로 사용됩니다.
+# in 이후 선언된 숫자만큼 반복 합니다.
+# 들여쓰기로 된 구문들을 반복합니다.
+
+turtle.color('red')
+turtle.forward(200)
+
+# 들여쓰기를 벗어나면 반복할 구간에서 벗어납니다.
+# 위 구문도 반복해서 실행하고 싶다면 for loop 아래 구문들과 같은 들여쓰기로 바꿔보세요.
+
+"""
+아래 코드에서 틀린 부분을 찾아봅시다
+"""
+
+# improt turtle
+# for steps in range(4)
+#       turtle.forward(100)
+# turtle.right(90)
+
